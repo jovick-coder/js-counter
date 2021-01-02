@@ -1,0 +1,43 @@
+body {
+	 background: #ddd;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
+.flex-container > div {
+	  background-color: #34C9F0;
+  width: 100%;
+  margin: 0px 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  height:100%;
+}
+.btn-div{
+	width: 100%;
+	display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+.display-div{
+		width: 100%;
+	display: flex;
+  justify-content: space-around;
+}
+.display{
+	background-color: #ddd;
+	width: 80%;
+	height: 200px;
+	margin-top:20px;
+	padding: 50px 0px;
+	font-size: 200px;
+}
+.btn-div input{ 
+	width: 50px;
+}

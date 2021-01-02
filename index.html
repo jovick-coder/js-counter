@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Web counter </title>
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+ </head>
+</head>
+<body>
+<div class="flex-container">
+  
+  <div>
+  <div class="display-div">
+  <div class="display"  id="display"></div>
+  </div>
+  <div class="btn-div">
+			<input type="image" onclick="addNumber()" src="img/add.png" id="add">
+			<input type="image" onclick="stopNumber()" src="img/stop.png" id="stop">
+			<input type="image" onclick="deleteNumber()" src="img/delete.png" id="delete">
+		</div>
+		
+		
+		
+  </div>
+  
+  
+  
+</div>
+<script>
+var Number = 0;
+
+var display = document.getElementById("display");
+display.innerHTML= Number;
+
+function addNumber() {
+/*do{
+Number = ++Number;
+display.innerHTML= Number;
+} while (Number <1);
+
+*/
+
+if (Number==Number){
+Number = ++Number;
+display.innerHTML= Number;
+
+}
+  //alert( "Add Number");
+}
+function deleteNumber() {
+
+if (Number==Number){
+Number = --Number;
+display.innerHTML= Number;
+
+}
+
+//display.innerHTML= --Number;
+  //alert( "delete Number");
+}
+function stopNumber() {
+
+  alert( "Current Number ( " + Number +" )");
+}
+
+</script>
+</body>
+</html>
